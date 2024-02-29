@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandan Sen - Personal Portfolio</title>
+    <link rel="shortcut icon" href="img/Untitled-1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
         <div class="container">
             <div class="header_wrap">
                 <div class="logo">
-                    <h2>ChandanSen.</h2>
+                    <h2>ChandanS.</h2>
                  </div>
                  <nav>
                      <ul>
@@ -23,6 +24,13 @@
                  </nav>
                  <div class="button">
                      <button>Sign In</button>
+                 </div>
+                 <div class="mobile_menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#17c549" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                 <div class="cross">X</div>
+
                  </div>
             </div>
            
@@ -65,9 +73,9 @@
                     </div>
                     <div class="home_img_wrap">
                         <div class="img_wrap">
-                            <div class="background-rhombus ">
+                            
                                 <img src="img/chandansen.png" alt="">
-                            </div>
+                       
                         </div>
                     </div>
                 </div>
@@ -86,10 +94,12 @@
                     </div>
                     <div class="about_desc">
                         <h2>About Me</h2>
+                       <div class="about_content">
                         <p>It's my pleasure to introduce myself as Chandan Sen, an expert shopify theme developer. For the last two year, I have been working as front end web development using HTML, CSS and JS. </p>
                         <p>
                             Now I decided to boost my carrer opportunity and my area of expertise in E-ecommerce development. So, that's why I'm interesed in developing shopify store.
                         </p>
+                       </div>
     
                        <button class="p_button">Hire Me</button>
                     </div>
@@ -378,5 +388,21 @@
     </div>
 </footer>
     </main>
+
+
+    <script>
+        const menuList = document.querySelector("nav ul");
+        const menuCross = document.querySelector(".cross");
+        const menuHamb =  document.querySelector(".mobile_menu svg")
+        document.querySelector(".mobile_menu").addEventListener('click', () => {
+            menuList.classList.toggle('show');
+            if(menuList.className == "show"){
+                menuHamb.classList.add('hide')
+            }else{
+                menuHamb.classList.remove('hide')
+            }
+            menuCross.classList.toggle('show')
+        })
+    </script>
 </body>
 </html>
