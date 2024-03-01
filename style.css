@@ -1,5 +1,5 @@
 * { margin: 0px; padding: 0px; box-sizing: border-box; }
-body { margin: 0px; font-family: Arial, sans-serif; background-color: rgb(26, 53, 37); }
+body { margin: 0px; font-family: Arial, sans-serif; background-color: rgb(26, 53, 37);scroll-behavior: smooth; }
 :root { --primary-color: #17c549; --secondary-color: #018060; }
 .primary_color { color: var(--primary-color); }
 .secondary_color { color: rgb(105, 230, 198); }
